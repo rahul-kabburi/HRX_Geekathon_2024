@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*----------------------------------------------------------------------------HOME PAGE---------------------------------------------------------------------------------*/
+
+/*----------------------------------Navbar---------------------------------------*/
+
+#navbar{
+    background-color: black;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo img{
+    height: 5vh;
+    width: 5vw;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding: 0 30px;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navigation a:hover{
+    color: rgb(188, 51, 51);
+}
+
+.btn{
+    width: 20%;
+}
+.btn button{
+    width: 6vw;
+    height: 6vh;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(188, 51, 51);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
+.btn button:hover{
+    background-color: rgb(173, 20, 20);
+}
+
+/*--------------------------HOME_VIDEO-----------------------------------------*/
+
+#home_video{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.video video{
+    height: 100vh;
+    width: 100%;
+}
+
+/*----------------------COLLECTION-------------------------------------------*/
+
+#collection{
+    height: 60vh;
+    width: 100%;
+}
+
+.text_btn button{
+    background-color: rgb(197, 50, 50);
+    border: none;
+    color: white;
+    height: 6vh;
+    width: 7vw;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 21px;
+    float: end;
+}
+.text_btn button:hover{
+    background-color: rgb(173, 20, 20);
+}
+
+.variety{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.variety img{
+    height: 28vh;
+    width: 22vw;
+    margin: 20px;
+}
+.variety img:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+}
+
+/*--------------------TRANSFORMATION--------------------------------------------*/
+
+#transformation{
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+}
+.kabir iframe{
+    width: 100%;
+}
+
+/*-----------------------------------FUEL---------------------------------------*/
+
+#fuel{
+    background-color: rgb(219, 42, 42);
+    height: 83vh;
+    width: 100%;
+}
+.white{
+    background-color: white;
+    height: 83vh;
+    width: 93%;
+    margin: 0px 45px;
+    position: relative;
+}
+.fuel_image{
+    width: 40%;
+    position: absolute;
+    right: 55%;
+}
+.fuel_image img{
+    height: 70vh;
+    width: 45vw;
+    margin: 50px 0px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+}
+.data{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px;
+    text-align: left;
+}
+.count{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    text-align: left;
+}
+.count h2{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(54, 54, 54);
+}
+.text p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: rgb(93, 92, 92);
+}
+.fuelbtn{
+    width: 78%;
+    display: flex;
+    justify-content: start;
+    margin: 40px;
+}
+.fuelbtn button{
+    height: 6vh;
+    width: 13vw;
+    background-color: rgb(219, 42, 42);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.fuelbtn button:hover{
+    background-color: rgb(155, 28, 28);
+}
+
+/*------------------------------YOGA-----------------------------------*/
+
+.yoga_image{
+    height: 40vh;
+    width: 50%;
+}
+
+.yoga_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 30%;
+    color: white;
+}
+.yoga_btn{
+    margin: 20px;
+}
+.yoga_btn button{
+    height: 6vh;
+    width: 15vw;
+    background-color: rgb(219, 42, 42);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+}
+.yoga_btn button:hover {
+    background-color: rgb(155, 28, 28);
+}
+
+/*------------------------------PARTNERS-----------------------------------*/
+
+#partners{
+    height: 43vh;
+    width: 100%;
+}
+.text{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.brands{
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 17px;
+}
+.brands img{
+    height: 12vh;
+    width: 22vh;
+}
+.brands img:hover{
+    transform: scale(1.20);
+    transition: all 0.4s linear;
+}
+
+/*------------------------------EATFIT-----------------------------------*/
+
+#eatfit{
+    background-color: black;
+    height: 60vh;
+    display: flex;
+}
+.eatfit_text{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.cafe{
+    width: 50%;
+}
+.cafe img{
+    height: 60vh;
+    width: 100%;
+}
+
+/*------------------------------LEVEL-UP-----------------------------------*/
+
+#level-up{
+    background-color: rgb(219, 42, 42);
+    height: 60vh;
+    width: 100%;
+}
+.white2 {
+    background-color: white;
+    height: 60vh;
+    width: 93%;
+    margin: 0px 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.level_data{
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+}
+.merge_images{
+    width: 60%;
+    gap: 20px;
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.merge_images img{
+    height: 50vh;
+    width: 15vw;
+    width: 30%;
+}
+.level_btn button{
+    height: 6vh;
+    width: 14vw;
+    border: none;
+    background-color: rgb(219, 42, 42);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.level_btn button:hover{
+    background-color: rgb(163, 25, 25);
+}
+
+/*------------------------------BANNER-----------------------------------*/
+
+#banner{
+    background-color: black;
+    height: 75vh;
+    width: 100%;
+
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    color: white;
+}
+.banner_images{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 50px;
+}
+.banner_images img{
+    height: 38vh;
+    width: 38vh;
+}
+.banner_images img:hover{
+    transform: scale(1.2);
+    transition: all 0.4s ease-in-out;
+}
+
+/*------------------------------FOOTER-----------------------------------*/
+
+#footer {
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    display: flex;
+}
+
+.footer_logo {
+    width: 20%;
+    margin: 70px;
+}
+
+.social {
+    margin-bottom: 40px;
+}
+
+.media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.media img {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+}
+
+.media img:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+}
+
+.footer_data {
+    width: 44%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.footer_data h4 {
+    color: rgb(219, 42, 42);
+    cursor: pointer;
+}
+
+.footer_data h4:hover {
+    color: rgb(222, 116, 116);
+}
+
+.collect p:hover {
+    color: gray;
+}
+
+.navigate p:hover {
+    color: gray;
+}
+
+.commune p:hover {
+    color: gray;
+}
+/**********************************************************************************************************************************************************************/

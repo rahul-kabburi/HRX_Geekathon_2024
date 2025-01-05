@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*----------------------------------Navbar---------------------------------------*/
+
+#navbar {
+    background-color: black;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    height: 5vh;
+    width: 5vw;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding: 0 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navigation a:hover {
+    color: rgb(188, 51, 51);
+}
+
+.btn {
+    width: 20%;
+}
+
+.btn button {
+    width: 6vw;
+    height: 6vh;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(188, 51, 51);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.btn button:hover {
+    background-color: rgb(173, 20, 20);
+}
+
+/*--------------------------CONNECT-----------------------------------------*/
+
+#connect {
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.rope-img img{
+    height: 70vh;
+    width: 100%;
+}
+
+.rope {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    float: left;
+    position: absolute;
+    right: 80%;
+    bottom: 19%;
+}
+
+/*--------------------------TEXTAREA-----------------------------------------*/
+
+#textarea{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.fhalf{
+    width: 50%;
+    margin: 60px 100px;
+}
+.locate-btn{
+    height: 6vh;
+    width: 7vw;
+    border: none;
+    color: white;
+    background-color: rgb(193, 36, 36);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.content{
+    display: flex;
+}
+.office{
+    width: 50%;
+}
+.store{
+    width: 50%;
+}
+.shalf{
+    width: 50%;
+    margin: 60px 100px;
+}
+.area input{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 30px;
+    height: 6vh;
+    width: 100%;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+.connect-btn{
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(191, 27, 27);
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(190, 34, 34);
+}
+
+/*------------------------------FOOTER-----------------------------------*/
+
+#footer {
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    display: flex;
+}
+
+.footer_logo {
+    width: 20%;
+    margin: 70px;
+}
+
+.social {
+    margin-bottom: 40px;
+}
+
+.media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.media img {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+}
+
+.media img:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+}
+
+.footer_data {
+    width: 44%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.footer_data h4 {
+    color: rgb(219, 42, 42);
+    cursor: pointer;
+}
+
+.footer_data h4:hover {
+    color: rgb(222, 116, 116);
+}
+
+.collect p:hover {
+    color: gray;
+}
+
+.navigate p:hover {
+    color: gray;
+}
+
+.commune p:hover {
+    color: gray;
+}
